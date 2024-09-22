@@ -38,7 +38,6 @@ public class Main {
             domicilio.setCliente(cliente);
 
             factura1.setCliente(cliente);
-            System.out.println("ESTAMOS LABURANDO 1");
 
             Categoria perecederos = Categoria.builder()
                     .denominacion("Perecederos")
@@ -71,28 +70,20 @@ public class Main {
                     .build();
 
             art1.getCategorias().add(perecederos);
-            System.out.println("ESTAMOS LABURANDO 11");
             art1.getCategorias().add(lacteos);
-            System.out.println("ESTAMOS LABURANDO 22");
             perecederos.getArticulos().add(art1);
-            System.out.println("ESTAMOS LABURANDO 33");
             lacteos.getArticulos().add(art1);
-            System.out.println("ESTAMOS LABURANDO 44");
 
-            System.out.println("ESTAMOS LABURANDO 2");
 
             art2.getCategorias().add(limpieza);
             limpieza.getArticulos().add(art2);
-            System.out.println("ESTAMOS LABURANDO 3");
 
             art3.getCategorias().add(perecederos);
             perecederos.getArticulos().add(art3);
 
-            System.out.println("ESTAMOS LABURANDO 4");
 
             DetalleFactura det1 = DetalleFactura.builder()
                     .build();
-            System.out.println("ESTAMOS LABURANDO 41");
 
             det1.setArticulo(art1);
             det1.setCantidad(2);
@@ -102,7 +93,6 @@ public class Main {
             factura1.getDetalles().add(det1);
             det1.setFactura(factura1);
 
-            System.out.println("ESTAMOS LABURANDO 5");
 
             DetalleFactura det2 = DetalleFactura.builder()
                     .build();
@@ -110,8 +100,6 @@ public class Main {
             det2.setArticulo(art2);
             det2.setCantidad(1);
             det2.setSubtotal(20);
-
-            System.out.println("ESTAMOS LABURANDO 6");
 
             art2.getDetalleFacturas().add(det2);
             factura1.getDetalles().add(det2);

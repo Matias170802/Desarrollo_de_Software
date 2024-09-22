@@ -1,6 +1,7 @@
 package org.example.Entidades;
 
 import lombok.*;
+import org.hibernate.envers.Audited;
 
 import javax.persistence.*;
 import java.io.Serializable;
@@ -15,6 +16,7 @@ import java.util.List;
 @Setter
 @ToString
 @Builder
+@Audited
 public class Categoria implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
