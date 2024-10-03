@@ -14,27 +14,6 @@
             font-weight: bold;
             background-color: gray;
         }
-        .card-container{
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            grid-column-gap: 15px;
-            justify-content: center;
-        }
-        .card{
-            background: #669bbc;
-            width: 100px;
-            height: 100px;
-            border-radius: 7px;
-            cursor: pointer;
-            box-shadow: rgba(100, 100, 111, 0.2)
-            0px 7px 29px 0px;
-            transition: all 0.3s ease-in-out;
-            text-align: center;
-        }
-        .card:hover {
-            transform: translateY(-15px);
-        }
-        
     </style>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -69,28 +48,19 @@
             <hr>
             <!-- Listas-->
             <h1>Links</h1>
-            <div class="card-container">
+            <div>
                 <ol>
-                    <div class="card">
-                        <li><a href="https://www.google.com">Google</a></li>
-                    </div>
-                    <div class="card">
-                        <li><a href="https://www.youtube.com">Youtube</a></li>
-                    </div>
-                    <div class="card">
-                        <li><a href="https://www.youtube.com/watch?v=FcZ_D5jsilM&list=PLRFOqDrY-6ns2FQdjmqx3ShGLRLj9ESPE&index=4">Video donde explica como hacer esto</a></li>
-                    </div>
+                    <li><a href="https://www.google.com">Google</a></li>
+                    <li><a href="https://www.youtube.com">Youtube</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=FcZ_D5jsilM&list=PLRFOqDrY-6ns2FQdjmqx3ShGLRLj9ESPE&index=4">Video donde explica como hacer esto</a></li>
                 </ol>
+            </div>
+
+            <div>
                 <ul>
-                    <div class="card">
-                        <li><a href="#Formulario">Ir a Formulario</a></li>
-                    </div>
-                    <div class="card">
-                        <li><a href="#Tabla">Ir a Tabla</a></li>
-                    </div>
-                    <div class="card">
-                        <li><a href="http://127.0.0.1:5500/Practica_Videos/index.html">Nuestro sitio web</a></li>
-                    </div>
+                    <li><a href="#Formulario">Ir a Formulario</a></li>
+                    <li><a href="#Tabla">Ir a Tabla</a></li>
+                    <li><a href="http://127.0.0.1:5500/Practica_Videos/index.html">Nuestro sitio web</a></li>
                 </ul>
             </div>
         </section>

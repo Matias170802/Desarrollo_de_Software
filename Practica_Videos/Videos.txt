@@ -1,0 +1,4 @@
+HTML : https://youtube.com/watch?v=tSdBH5xsDOk&list=PLRFOqDrY-6ns2FQdjmqx3ShGLRLj9ESPE&index=3&ab_channel=ColmenaTEC
+CSS : https://www.youtube.com/playlist?list=PLRFOqDrY-6ntTdihs-gDmazR6JhBnFVSn
+JPA y Envers : https://www.youtube.com/watch?v=el96yx6SG7Y&list=PLRFOqDrY-6ntn-9bp5wyPvGboUphhLT9d&index=2&t=18s&ab_channel=ColmenaTEC
+API REST : https://www.youtube.com/watch?v=LGck-So93TA&list=PLRFOqDrY-6nvhgKJ2Db1h8aPJm3zaX6eO&index=2&ab_channel=ColmenaTEC

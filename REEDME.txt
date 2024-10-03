@@ -1,2 +1,5 @@
 En este Repositorio estan todos los tps y apuntes de videos de Desarrollo de Software, organizados por capetas 
 TP1--> HTML
+TP2--> CSS
+TP3--> JPA y Envers
+TP4--> API Rest
