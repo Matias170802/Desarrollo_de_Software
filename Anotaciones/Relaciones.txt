@@ -1,0 +1,63 @@
+***************************************Tipos de Relaciones en JPA******************************************************
+
+1-One-to-One (Uno a Uno):
+
+Descripción: Cada instancia de una entidad A se relaciona con una única instancia de una entidad B y viceversa.
+Ejemplo: Un usuario tiene un perfil, y cada perfil pertenece a un único usuario.
+
+    @OneToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "fk_domicilio")
+    private Domicilio domicilio;
+
+2-One-to-Many (Uno a Muchos):
+
+Descripción: Una instancia de una entidad A se relaciona con múltiples instancias de una entidad B, pero cada instancia de B se relaciona con solo una instancia de A.
+Ejemplo: Un autor puede tener múltiples libros, pero cada libro tiene un solo autor.
+
+    @OneToMany(cascade = CascadeType.ALL, orphanRemoval = true)
+    @JoinTable(
+            name = "persona_libro",
+            joinColumns = @JoinColumn(name = "persona_id"),
+            inverseJoinColumns = @JoinColumn(name = "libro_id")
+    )
+    private List<Libro> libros = new ArrayList<Libro>();
+
+3-Many-to-One (Muchos a Uno):
+
+Descripción: Múltiples instancias de una entidad A pueden relacionarse con una única instancia de una entidad B.
+Ejemplo: Muchos empleados pertenecen a un solo departamento.
+
+    @ManyToOne(optional = false)
+    @JoinColumn(name = "fk_localidad")
+    private Localidad localidad;
+
+4-Many-to-Many (Muchos a Muchos):
+
+Descripción: Múltiples instancias de una entidad A pueden relacionarse con múltiples instancias de una entidad B.
+Ejemplo: Estudiantes pueden estar inscritos en múltiples cursos, y cada curso puede tener múltiples estudiantes.
+
+
+@ManyToMany(cascade = CascadeType.REFRESH)
+    private List<Autor> autores;
+
+************************************Tipos de Cascadas**********************************************************
+CascadeType.PERSIST:
+
+Descripción: Cuando se persiste la entidad padre, las entidades hijas asociadas también se persisten.
+Uso: Utilizado cuando se quiere asegurar que al guardar una entidad, sus dependencias también se guarden.
+CascadeType.MERGE:
+
+Descripción: Cuando se realiza una operación de merge en la entidad padre, las entidades hijas también se actualizan.
+Uso: Se usa cuando se desea combinar la entidad padre y sus entidades relacionadas.
+CascadeType.REMOVE:
+
+Descripción: Al eliminar la entidad padre, las entidades hijas también se eliminan.
+Uso: Se utiliza para eliminar automáticamente las entidades dependientes cuando se elimina la entidad que las contiene.
+CascadeType.REFRESH:
+
+Descripción: Al refrescar la entidad padre, las entidades hijas también se refrescan.
+Uso: Útil para volver a cargar el estado de las entidades hijas desde la base de datos cuando se actualiza la entidad padre.
+CascadeType.DETACH:
+
+Descripción: Al desasociar la entidad padre del contexto de persistencia, las entidades hijas también se desasocian.
+Uso: Utilizado para separar las entidades hijas del contexto de persistencia cuando la entidad padre se separa.

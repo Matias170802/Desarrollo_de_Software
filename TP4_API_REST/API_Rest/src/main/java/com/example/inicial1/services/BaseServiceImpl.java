@@ -1,7 +1,6 @@
 package com.example.inicial1.services;
 
 import com.example.inicial1.entities.Base;
-import com.example.inicial1.entities.E;
 import com.example.inicial1.repositories.BaseRepository;
 import jakarta.transaction.Transactional;
 
@@ -57,7 +56,7 @@ public abstract class BaseServiceImpl<E extends Base, ID extends Serializable> i
         try {
             Optional<E> entityOpcional = baseRepository.findById(id);
             E entityUdtate = entityOpcional.get();
-            entityUdtate = baseRepository.save(entityUdtate);
+            entityUdtate = baseRepository.save(entity);
             return entityUdtate;
         }catch (Exception e){
             throw new Exception(e.getMessage());
