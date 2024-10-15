@@ -1,17 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="15a03d60-be12-4f13-805d-4a2f8303fabc" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/API_Rest/src/main/java/com/example/inicial1/audit/Revision.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/API_Rest/src/main/java/com/example/inicial1/config/CustomRevisionListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/API_Rest/src/main/java/com/example/inicial1/services/BaseService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/API_Rest/src/main/resources/schema.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Practica_Videos/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../REEDME.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../REEDME.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Parcial/Parcial_Anselmi/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Parcial/Parcial_Anselmi/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Parcial/Parcial_Anselmi/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Parcial/Parcial_Anselmi/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Parcial/Parcial_Anselmi/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Parcial/Parcial_Anselmi/src/main/java/org/example/config/AppConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Parcial/Parcial_Anselmi/src/main/java/org/example/controller/PersonaController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Parcial/Parcial_Anselmi/src/main/java/org/example/entities/Persona.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Parcial/Parcial_Anselmi/src/main/java/org/example/services/ApiClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Parcial/Parcial_Anselmi/src/main/java/org/example/services/PersonaService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Parcial/Parcial_Anselmi/src/main/resources/aplication.propieties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/API_Rest/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/API_Rest/build.gradle" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

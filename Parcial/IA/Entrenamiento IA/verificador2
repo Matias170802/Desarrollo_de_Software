@@ -1,0 +1,17 @@
+import json
+
+# Cargar el archivo JSON con los resultados de prueba
+filename = 'resultado_prueba.json'
+with open(filename, 'r') as f:
+    resultados = json.load(f)
+
+# Contar cuántas etiquetas son 0 y cuántas son 1
+contador = {0: 0, 1: 0}
+for resultado in resultados:
+    etiqueta = resultado['etiqueta']
+    if etiqueta in contador:
+        contador[etiqueta] += 1
+
+# Imprimir los resultados
+print(f"Etiquetas 0: {contador[0]}")
+print(f"Etiquetas 1: {contador[1]}")
